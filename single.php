@@ -24,13 +24,6 @@ get_header();
 					<div class="single-post__body">
 						<div class="post-single__meta">
 							<span>
-								<?php
-								printf(
-									esc_html__( 'By %s', 'enterprise-content-hub' ),
-									esc_html( get_the_author() )
-								); ?>
-							</span>
-							<span>
 								<?php echo esc_html( get_the_date() ); ?>
 							</span>
 							<span>
