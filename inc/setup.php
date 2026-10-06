@@ -33,7 +33,9 @@ function ech_setup() {
 /**
  * Save ACF field groups as local JSON inside the theme.
  */
-add_action( 'after_setup_theme', 'ech_setup' );function ech_acf_json_save_path( $path ) {
+add_action( 'after_setup_theme', 'ech_setup' );
+
+function ech_acf_json_save_path( $path ) {
 	return get_stylesheet_directory() . '/acf-json';
 }
 add_filter( 'acf/settings/save_json', 'ech_acf_json_save_path' );
